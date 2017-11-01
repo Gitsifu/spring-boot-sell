@@ -10,7 +10,7 @@ import lombok.Data;
  * 2017-10-14 14:31
  */
 @Data
-public class ResultVO<T> {
+public class ResultVo<T> {
 
     /**
      * 错误码

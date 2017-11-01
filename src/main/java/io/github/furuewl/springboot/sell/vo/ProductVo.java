@@ -12,7 +12,7 @@ import java.util.List;
  * 2017-10-14 14:35
  */
 @Data
-public class ProductVO {
+public class ProductVo {
 
     @JsonProperty("name")
     private String categoryName;
@@ -21,6 +21,6 @@ public class ProductVO {
     private Integer categoryType;
 
     @JsonProperty("foods")
-    private List<ProductInfoVO> productInfoVOList;
+    private List<ProductInfoVo> productInfoVoList;
 
 }

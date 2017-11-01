@@ -2,7 +2,7 @@ package io.github.furuewl.springboot.sell.dto;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import io.github.furuewl.springboot.sell.dataobject.OrderDetail;
-import io.github.furuewl.springboot.sell.utils.serializer.Date2LongSerializer;
+import io.github.furuewl.springboot.sell.utils.serializer.DateToLongSerializer;
 import lombok.Data;
 
 import javax.persistence.Id;
@@ -61,13 +61,13 @@ public class OrderDto {
     /**
      * 创建时间
      */
-    @JsonSerialize(using = Date2LongSerializer.class)
+    @JsonSerialize(using = DateToLongSerializer.class)
     private Date createTime;
 
     /**
      * 更新时间
      */
-    @JsonSerialize(using = Date2LongSerializer.class)
+    @JsonSerialize(using = DateToLongSerializer.class)
     private Date updateTime;
 
     /**

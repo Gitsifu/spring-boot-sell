@@ -3,6 +3,8 @@ package io.github.furuewl.springboot.sell.utils;
 import java.util.Random;
 
 /**
+ * 主键工具类
+ *
  * @author weilai
  */
 public class KeyUtil {

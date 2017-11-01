@@ -7,15 +7,18 @@ import com.fasterxml.jackson.databind.SerializerProvider;
 import java.io.IOException;
 import java.util.Date;
 
-public class Date2LongSerializer extends JsonSerializer<Date> {
+/**
+ * Date转Long类型
+ *
+ * @author weilai
+ */
+public class DateToLongSerializer extends JsonSerializer<Date> {
 
     @Override
     public void serialize(Date value, JsonGenerator gen, SerializerProvider serializers) throws IOException {
 
 
-
         gen.writeNumber(value.getTime() / 1000);
-
 
 
     }
